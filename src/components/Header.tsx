@@ -11,9 +11,11 @@ export default function Header() {
     <NavbarWithLinksActionsAndCenteredLogo
       links={
         <>
+          <NavbarLink href="#how-it-works">How It Works</NavbarLink>
           <NavbarLink href="#features">Features</NavbarLink>
+          <NavbarLink href="#use-cases">Use Cases</NavbarLink>
           <NavbarLink href="#installation">Installation</NavbarLink>
-          <NavbarLink href="#commands">Commands</NavbarLink>
+          <NavbarLink href="#faq">FAQ</NavbarLink>
           <NavbarLink href="#documentation">Docs</NavbarLink>
         </>
       }

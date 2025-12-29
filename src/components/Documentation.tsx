@@ -15,42 +15,42 @@ export default function Documentation() {
         </div>
 
         <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          <div className="rounded-lg border border-mist-200 bg-white p-6 dark:border-mist-800 dark:bg-mist-950">
+          <a href="https://github.com/getstackit/stackit#getting-started" target="_blank" rel="noopener noreferrer" className="rounded-lg border border-mist-200 bg-white p-6 dark:border-mist-800 dark:bg-mist-950 hover:border-mist-300 dark:hover:border-mist-700 transition-colors">
             <Subheading className="mb-3">📖 Getting Started Guide</Subheading>
             <Text>Complete walkthrough for new users including installation, setup, and your first stack.</Text>
-          </div>
+          </a>
 
-          <div className="rounded-lg border border-mist-200 bg-white p-6 dark:border-mist-800 dark:bg-mist-950">
-            <Subheading className="mb-3">🎓 Advanced Workflows</Subheading>
-            <Text>Learn advanced patterns like insert mode, patch staging, and complex stack management.</Text>
-          </div>
+          <a href="https://github.com/getstackit/stackit#command-reference" target="_blank" rel="noopener noreferrer" className="rounded-lg border border-mist-200 bg-white p-6 dark:border-mist-800 dark:bg-mist-950 hover:border-mist-300 dark:hover:border-mist-700 transition-colors">
+            <Subheading className="mb-3">📚 Command Reference</Subheading>
+            <Text>Complete reference for all stackit commands with examples and options.</Text>
+          </a>
 
-          <div className="rounded-lg border border-mist-200 bg-white p-6 dark:border-mist-800 dark:bg-mist-950">
+          <a href="https://github.com/getstackit/stackit#common-workflows" target="_blank" rel="noopener noreferrer" className="rounded-lg border border-mist-200 bg-white p-6 dark:border-mist-800 dark:bg-mist-950 hover:border-mist-300 dark:hover:border-mist-700 transition-colors">
+            <Subheading className="mb-3">🎓 Common Workflows</Subheading>
+            <Text>Learn common patterns like creating stacks, handling reviews, and syncing with main.</Text>
+          </a>
+
+          <a href="https://github.com/getstackit/stackit#configuration" target="_blank" rel="noopener noreferrer" className="rounded-lg border border-mist-200 bg-white p-6 dark:border-mist-800 dark:bg-mist-950 hover:border-mist-300 dark:hover:border-mist-700 transition-colors">
             <Subheading className="mb-3">⚙️ Configuration</Subheading>
             <Text>Customize Stackit&apos;s behavior with repository and global configuration options.</Text>
-          </div>
+          </a>
 
-          <div className="rounded-lg border border-mist-200 bg-white p-6 dark:border-mist-800 dark:bg-mist-950">
+          <a href="https://github.com/getstackit/stackit/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer" className="rounded-lg border border-mist-200 bg-white p-6 dark:border-mist-800 dark:bg-mist-950 hover:border-mist-300 dark:hover:border-mist-700 transition-colors">
             <Subheading className="mb-3">🤝 Contributing</Subheading>
             <Text>Want to contribute? Learn about the project structure and development workflow.</Text>
-          </div>
+          </a>
 
-          <div className="rounded-lg border border-mist-200 bg-white p-6 dark:border-mist-800 dark:bg-mist-950">
+          <a href="#faq" className="rounded-lg border border-mist-200 bg-white p-6 dark:border-mist-800 dark:bg-mist-950 hover:border-mist-300 dark:hover:border-mist-700 transition-colors">
             <Subheading className="mb-3">❓ FAQ</Subheading>
             <Text>Common questions and troubleshooting tips for working with stacked changes.</Text>
-          </div>
-
-          <div className="rounded-lg border border-mist-200 bg-white p-6 dark:border-mist-800 dark:bg-mist-950">
-            <Subheading className="mb-3">📝 Changelog</Subheading>
-            <Text>See what&apos;s new in recent releases and upcoming features on the roadmap.</Text>
-          </div>
+          </a>
         </div>
 
         <div className="mt-16 rounded-lg border border-mist-200 bg-mist-50 p-8 dark:border-mist-800 dark:bg-mist-900">
           <Subheading className="mb-4">Need Help?</Subheading>
           <Text className="mb-4">
-            Run <code className="rounded bg-white px-2 py-1 text-sm dark:bg-mist-800">stackit --help</code> or{' '}
-            <code className="rounded bg-white px-2 py-1 text-sm dark:bg-mist-800">stackit [command] --help</code> to see detailed command information.
+            Run <code className="rounded bg-mist-200 dark:bg-mist-800 text-mist-900 dark:text-mist-100 px-2 py-1 text-sm">stackit --help</code> or{' '}
+            <code className="rounded bg-mist-200 dark:bg-mist-800 text-mist-900 dark:text-mist-100 px-2 py-1 text-sm">stackit [command] --help</code> to see detailed command information.
           </Text>
           <Text>
             Found a bug or have a feature request?{' '}

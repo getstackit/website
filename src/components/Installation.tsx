@@ -14,11 +14,19 @@ export default function Installation() {
         <div className="mt-16 grid gap-8 md:grid-cols-3">
           <div className="rounded-lg border border-mist-200 bg-white p-6 dark:border-mist-800 dark:bg-mist-950">
             <div className="mb-4 flex items-center gap-3">
-              <Subheading>Build from Source</Subheading>
+              <Subheading>Homebrew</Subheading>
               <span className="rounded bg-mist-500 px-2 py-1 text-xs font-medium text-white">Recommended</span>
             </div>
+            <Text className="mb-4">Install via Homebrew (macOS and Linux):</Text>
+            <pre className="rounded border border-mist-200 bg-mist-50 p-4 text-sm dark:border-mist-800 dark:bg-mist-900"><code className="text-mist-900 dark:text-mist-100">brew install getstackit/tap/stackit</code></pre>
+          </div>
+
+          <div className="rounded-lg border border-mist-200 bg-white p-6 dark:border-mist-800 dark:bg-mist-950">
+            <div className="mb-4 flex items-center gap-3">
+              <Subheading>Build from Source</Subheading>
+            </div>
             <Text className="mb-4">Clone the repository and build using Go or Just:</Text>
-            <pre className="rounded border border-mist-200 bg-mist-50 p-4 text-sm dark:border-mist-800 dark:bg-mist-900"><code>{`# Using Go
+            <pre className="rounded border border-mist-200 bg-mist-50 p-4 text-sm dark:border-mist-800 dark:bg-mist-900"><code className="text-mist-900 dark:text-mist-100">{`# Using Go
 git clone https://github.com/getstackit/stackit.git
 cd stackit
 go build -o stackit ./cmd/stackit
@@ -29,26 +37,26 @@ just build`}</code></pre>
 
           <div className="rounded-lg border border-mist-200 bg-white p-6 dark:border-mist-800 dark:bg-mist-950">
             <div className="mb-4 flex items-center gap-3">
-              <Subheading>Homebrew</Subheading>
-              <span className="rounded bg-mist-300 px-2 py-1 text-xs font-medium text-mist-700 dark:bg-mist-700 dark:text-mist-300">Coming Soon</span>
-            </div>
-            <Text className="mb-4">Install via Homebrew (macOS and Linux):</Text>
-            <pre className="rounded border border-mist-200 bg-mist-50 p-4 text-sm dark:border-mist-800 dark:bg-mist-900"><code>brew install stackit</code></pre>
-          </div>
-
-          <div className="rounded-lg border border-mist-200 bg-white p-6 dark:border-mist-800 dark:bg-mist-950">
-            <div className="mb-4 flex items-center gap-3">
               <Subheading>Binary Release</Subheading>
               <span className="rounded bg-mist-300 px-2 py-1 text-xs font-medium text-mist-700 dark:bg-mist-700 dark:text-mist-300">Coming Soon</span>
             </div>
             <Text className="mb-4">Download pre-built binaries from GitHub releases:</Text>
-            <pre className="rounded border border-mist-200 bg-mist-50 p-4 text-sm dark:border-mist-800 dark:bg-mist-900"><code>{`# Download for your platform
+            <pre className="rounded border border-mist-200 bg-mist-50 p-4 text-sm dark:border-mist-800 dark:bg-mist-900"><code className="text-mist-900 dark:text-mist-100">{`# Download for your platform
 curl -L https://github.com/getstackit/stackit/releases/latest/download/stackit-[platform] -o stackit
 chmod +x stackit`}</code></pre>
           </div>
         </div>
 
-        <div className="mt-16">
+        <div className="mt-12">
+          <Subheading>Verify Installation</Subheading>
+          <Text className="mt-4 mb-4">After installing, verify that stackit is working:</Text>
+          <pre className="rounded border border-mist-200 bg-mist-50 p-4 text-sm dark:border-mist-800 dark:bg-mist-900"><code className="text-mist-900 dark:text-mist-100">stackit --version</code></pre>
+          <Text className="mt-4">
+            <strong>Tip:</strong> You can use <code className="rounded bg-mist-200 dark:bg-mist-800 text-mist-900 dark:text-mist-100 px-1.5 py-0.5 text-sm">st</code> as a shorthand alias for <code className="rounded bg-mist-200 dark:bg-mist-800 text-mist-900 dark:text-mist-100 px-1.5 py-0.5 text-sm">stackit</code>
+          </Text>
+        </div>
+
+        <div className="mt-12">
           <Subheading>System Requirements</Subheading>
           <ul className="mt-4 list-disc pl-6 text-mist-600 dark:text-mist-400">
             <li>Go 1.25+ (for building from source)</li>
